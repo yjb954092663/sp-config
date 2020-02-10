@@ -1,9 +1,12 @@
-spring:
-  application:
-    name: zuul
+spring: 
   cloud:
     config:
-      override-none: true
+      discovery:
+        enabled: true
+        service-id: config-server
+      name: zuul
+      profile: dev
+      
 server:
   port: 3001
   
