@@ -4,8 +4,9 @@ spring:
   cloud:
     config:
       override-none: true  
+      
 server:
-  port: 8201  
+  port: 8201 
   
 eureka:
   client:
